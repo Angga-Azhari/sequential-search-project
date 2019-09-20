@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class LatPrak1 {
+
+    public static void latprak1() {
+        int cari;
+        boolean found = false;
+        int[] data = new int[]{29, 4, 10, 94, 96};
+        Scanner input = new Scanner(System.in);
+        System.out.println("masukan data yang di cari!");
+        cari = input.nextInt();
+        for (int i = 0; i < data.length; i++) {
+            if (cari == data[i]) {
+                found = true;
+                break;
+
+            }
+
+        }
+        if (found == true) {
+            System.out.println("data ditemukan!");
+        } else {
+            System.out.println("data tidak di temukan!");
+        }
+
+    }
+
+    public static void challenge() {
+        String data;
+        boolean ketemu = false;
+        String[] nama = {"angga", "iwan", "abdhy", "farrel"};
+        Scanner input = new Scanner(System.in);
+        System.out.println("golek i datane slurr: ");
+        data = input.nextLine();
+        for (int i = 0; i < nama.length; i++) {
+            if (data.equals(nama[i])) {
+                ketemu = true;
+                break;
+
+            }
+
+        }
+        if (ketemu == true) {
+            System.out.println("ketemu bosss:)");
+        } else {
+            System.out.println("gak ketemu boss:)");
+        }
+
+    }
+
+    public static void main(String[] args) {
+        latprak1();
+        challenge();
+
+    }
