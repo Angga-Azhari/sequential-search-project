@@ -1,14 +1,24 @@
 public static void main(String[] args) {
-        int data[] = new int[]{92, 98, 76, 72, 84, 101, 39};
-        System.out.print("data pada array: ");
+        int cari;
+        int data[] = new int[]{74, 98, 72, 74, 72, 90, 81, 72};
+        boolean ketemu = false;
+        Scanner input = new Scanner(System.in);
+        System.out.println("data pada array:");
         for (int i = 0; i < data.length; i++) {
             System.out.print(data[i] + "\t");
         }
-        System.out.println();
-        System.out.println("nilai yang merupakan kelipatan 3: ");
+        System.out.println("\n angka yang akan di cari: ");
+        cari = input.nextInt();
+        int a = 0;
         for (int i = 0; i < data.length; i++) {
-            if (data[i] % 3 == 0) {
-                System.out.println(data[i] + "\t");
+            if (cari == data[i]) {
+                ketemu = true;
+                a++;
             }
-
         }
+        if (ketemu == true) {
+            System.out.println("\n data yang di cari ditemukan sebanyak: " + a + " kali");
+        } else {
+            System.out.println("\n data tidak di temukan!");
+        }
+    }
