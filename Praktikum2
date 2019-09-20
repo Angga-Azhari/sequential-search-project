@@ -1,0 +1,24 @@
+
+    public static void main(String[] args) {
+        int max;
+        int cari;
+        double rata, jumlah = 0;
+        int data[] = new int[]{83, 76, 45, 90, 85, 80, 78, 74};
+        Scanner input = new Scanner(System.in);
+        System.out.println("data pada array: ");
+        for (int i = 0; i < data.length; i++) {
+            System.out.print(data[i] + "\t");
+        }
+        for (int j = 0; j < data.length; j++) {
+            jumlah = jumlah + data[j];
+        }
+        rata = jumlah / data.length;
+        System.out.println("\n rata rata nilai array = " + rata);
+        System.out.print(" nilai yang di atas rata rata adalah : ");
+        for (int i = 0; i < data.length; i++) {
+            if (data[i] >= rata) {
+                max = data[i];
+                System.out.print(data[i] + "\t");
+            }
+        }
+    }
