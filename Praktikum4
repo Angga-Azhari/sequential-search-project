@@ -12,26 +12,26 @@ public static void main(String[] args) {
             }
         }
         int i = 0;
-        for (int g = 0; g < cari.length(); g++) {
-            if (cari.charAt(i) == 'i') {
+        for (int j = 0; j < cari.length(); j++) {
+            if (cari.charAt(j) == 'i') {
                 i++;
             }
         }
         int u = 0;
         for (int f = 0; f < cari.length(); f++) {
-            if (cari.charAt(i) == 'u') {
+            if (cari.charAt(f) == 'u') {
                 u++;
             }
         }
         int e = 0;
-        for (int p = 0; p < cari.length(); p++) {
-            if (cari.charAt(i) == 'e') {
+        for (int h= 0; h < cari.length(); h++) {
+            if (cari.charAt(h) == 'e') {
                 e++;
             }
         }
         int o = 0;
-        for (int j = 0; j < cari.length(); j++) {
-            if (cari.charAt(i) == 'o') {
+        for (int y = 0; y < cari.length(); y++) {
+            if (cari.charAt(y) == 'o') {
                 o++;
             }
         }
